@@ -10,13 +10,13 @@ public class ManageScenes : MonoBehaviour
     public bool gameOver;
 
     //Cache objects
-    VideoAdManager videoad;
+    //VideoAdManager videoad;
     HandleKillCount handleKillCount;
 
     private void Start()
     {
         handleKillCount = FindObjectOfType<HandleKillCount>();
-        videoad = FindObjectOfType<VideoAdManager>();
+        //videoad = FindObjectOfType<VideoAdManager>();
     }
 
 
@@ -49,7 +49,7 @@ public class ManageScenes : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         if (handleKillCount.killCount >= 3)
         {
-            videoad.ShowVideoAd();
+            //videoad.ShowVideoAd();
             handleKillCount.killCount = 0;
         }
         SceneManager.LoadScene(2);

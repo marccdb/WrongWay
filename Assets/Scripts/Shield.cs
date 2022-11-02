@@ -7,7 +7,7 @@ public class Shield : MonoBehaviour
 {
 
     public bool isShield;
-    float time = 10;
+    //float time = 10;
 
     private void Start()
     {
